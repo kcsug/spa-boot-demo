@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "jest --config ./jest/jest.config.json",
     "lint": "eslint src/main/resources/assets/**/*.js",
     "bundle": "webpack --bail",
     "watch": "nodemon --exec  npm run bundle --watch js -L"

@@ -1,15 +1,15 @@
 const library = (state = {
-assets: [],
-author: '',
-description: '',
-filename: '',
-homepage: '',
-keywords: '',
-latest: '',
-license: '',
-name: '',
-repository: '',
-version: ''
+	assets: [],
+	author: '',
+	description: '',
+	filename: '',
+	homepage: '',
+	keywords: '',
+	latest: '',
+	license: '',
+	name: '',
+	repository: '',
+	version: ''
 }, action) => {
 	switch (action.type) {
 		case 'REQUEST_LIBRARY':
@@ -23,13 +23,13 @@ version: ''
 				{},
 				state,
 				{
-					isFetching: false,
+					isFetching: false
 				},
 				action.json
 			);
 		default:
 			return state;
 	}
-}
+};
 
 export default library;

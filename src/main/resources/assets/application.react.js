@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import configureStore from './configureStore';
 import Base from 'terra-base';
 import Grid from 'terra-grid';
+import configureStore from './configureStore';
 import LibrariesContainer from './Libraries/LibrariesContainer.react';
 import LibraryContainer from './Library/LibraryContainer.react';
 
@@ -15,8 +15,7 @@ ReactDOM.render(
 			<h1>JavaScript Libraries <small>from cdnjs</small></h1>
 			<Grid>
 				<Grid.Row>
-					<Grid.Column col={3}>
-					</Grid.Column>
+					<Grid.Column col={3} />
 					<Grid.Column col={3}>
 						<LibrariesContainer />
 					</Grid.Column>

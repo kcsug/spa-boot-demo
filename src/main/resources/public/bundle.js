@@ -13561,7 +13561,7 @@ _reactDom2.default.render(_react2.default.createElement(
 		_react2.default.createElement(
 			'h1',
 			null,
-			'JavaScript Libraries - Terra Demo ',
+			'JavaScript Libraries ',
 			_react2.default.createElement(
 				'small',
 				null,

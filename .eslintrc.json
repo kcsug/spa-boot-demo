@@ -1,0 +1,79 @@
+{
+	"extends": "airbnb",
+	"env": {
+		"browser": true,
+		"jest": true
+	},
+	"rules": {
+		/*
+		 * We develop in both OSes, so we can't enforce one type of linebreak.
+		 */
+		"linebreak-style": "off",
+		/*
+		 * We want to use tabs for indentation.
+		 */
+		"no-tabs": "off",
+		/*
+		 * Enforcing tabs for indentation for JavaScript.
+		 */
+		"indent": ["error", "tab", {
+			"SwitchCase": 1,
+			"MemberExpression": 1,
+			"FunctionDeclaration": {
+				"parameters": 1,
+				"body": 1
+			}
+		}],
+		/*
+		 * Sets the max line to 100 characters.
+
+		 * Lets urls, regular expressions, strings, and template literals violate
+		 * this rule, as its prefered to not have to break those things on to
+		 * multiple lines.
+		 */
+		"max-len": ["error", 100, 4, {
+			"ignoreUrls": true,
+			"ignoreComments": false,
+			"ignoreRegExpLiterals": true,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true
+		}],
+		/*
+		 * Prefer to not have comma dangle
+		 */
+		"comma-dangle": ["error", "never"],
+		/*
+		 * Single quotes are defaulted as rules for strings.
+		 * We want jsx quotes to be consistent.
+		 */
+		"jsx-quotes": ["error", "prefer-single"],
+		/*
+		 * Acceptable extensions for files with jsx.
+		 * We prefer .react.js for source and .test.js for tests.
+		 * .jsx is the default
+		 */
+		"react/jsx-filename-extension": ["warn", {
+			"extensions": [".react.js", ".test.js", ".jsx"]
+		}],
+		/*
+		 * Enforcing tabs for indentation for jsx syntax.
+		 */
+		"react/jsx-indent": ["error", "tab"],
+		/*
+		 * Enforcing tabs for indentation for jsx properties.
+		 */
+		"react/jsx-indent-props": ["error", "tab"],
+		/*
+		 * Works with no-unused-vars rule.  This rule
+		 * will mark jsx variables as used.
+		 */
+		"react/jsx-uses-vars": "error",
+
+		"react/no-array-index-key": "off",
+		/*
+		 * We want to be able to add handlers to non interactive elements.
+		 * Example: onClick handler on a div
+		 */
+		"jsx-a11y/no-static-element-interactions": "off"
+	}
+}

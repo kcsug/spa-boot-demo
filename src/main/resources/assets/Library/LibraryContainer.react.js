@@ -1,8 +1,7 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import Library from './Library.react';
 
-const mapStateToProps = (state, props) => ({
+const mapStateToProps = state => ({
 	library: state.library
 });
 

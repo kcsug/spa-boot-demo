@@ -21,6 +21,6 @@ const libraries = (state = {
 		default:
 			return state;
 	}
-}
+};
 
 export default libraries;

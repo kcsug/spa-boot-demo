@@ -1,8 +1,7 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import Libraries from './Libraries.react';
 
-const mapStateToProps = (state, props) => ({
+const mapStateToProps = state => ({
 	libraries: state.libraries.libraries
 });
 
@@ -14,11 +13,11 @@ const mapDispatchToProps = dispatch => ({
 		return fetch('/api/libraries', {
 			credentials: 'same-origin'
 		})
-		.then(response => response.json())
-		.then(json => dispatch({
-			type: 'RECEIVE_LIBRARIES',
-			json
-		}));
+			.then(response => response.json())
+			.then(json => dispatch({
+				type: 'RECEIVE_LIBRARIES',
+				json
+			}));
 	},
 
 	fetchLibrary: (name) => {
@@ -26,11 +25,11 @@ const mapDispatchToProps = dispatch => ({
 			type: 'REQUEST_LIBRARY'
 		});
 		return fetch(`/api/libraries/${name}`)
-		.then(response => response.json())
-		.then(json => dispatch({
-			type: 'RECEIVE_LIBRARY',
-			json
-		}));
+			.then(response => response.json())
+			.then(json => dispatch({
+				type: 'RECEIVE_LIBRARY',
+				json
+			}));
 	}
 });
 
