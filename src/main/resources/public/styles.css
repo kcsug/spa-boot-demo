@@ -1,0 +1,17 @@
+dd {
+	margin-bottom: 5px !important;
+}
+
+dt {
+	font-weight: bold;
+}
+
+li {
+	list-style: none;
+	padding: 5px 5px 5px 10px !important;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px !important;
+}
