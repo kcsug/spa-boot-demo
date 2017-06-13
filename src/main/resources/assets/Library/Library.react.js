@@ -23,19 +23,19 @@ const Library = (props) => {
 	return (
 		<dl>
 			<dt>Name:</dt>
-			<dd>{this.props.library.name}</dd>
+			<dd>{props.library.name}</dd>
 			<dt>Description:</dt>
-			<dd>{this.props.library.description}</dd>
+			<dd>{props.library.description}</dd>
 			<dt>Filename:</dt>
-			<dd>{this.props.library.filename}</dd>
+			<dd>{props.library.filename}</dd>
 			<dt>Homepage:</dt>
-			<dd>{this.props.library.homepage}</dd>
+			<dd>{props.library.homepage}</dd>
 			<dt>License:</dt>
-			<dd>{this.props.library.license}</dd>
+			<dd>{props.library.license}</dd>
 			<dt>Version:</dt>
-			<dd>{this.props.library.version}</dd>
+			<dd>{props.library.version}</dd>
 			<dt>Repository:</dt>
-			<dd>{this.props.library.repository && this.props.library.repository.url}</dd>
+			<dd>{props.library.repository && props.library.repository.url}</dd>
 			<dt>Assets:</dt>
 			<dd>{assets}</dd>
 		</dl>

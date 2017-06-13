@@ -13366,7 +13366,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.name
+			props.library.name
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13376,7 +13376,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.description
+			props.library.description
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13386,7 +13386,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.filename
+			props.library.filename
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13396,7 +13396,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.homepage
+			props.library.homepage
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13406,7 +13406,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.license
+			props.library.license
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13416,7 +13416,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.version
+			props.library.version
 		),
 		_react2.default.createElement(
 			'dt',
@@ -13426,7 +13426,7 @@ var Library = function Library(props) {
 		_react2.default.createElement(
 			'dd',
 			null,
-			undefined.props.library.repository && undefined.props.library.repository.url
+			props.library.repository && props.library.repository.url
 		),
 		_react2.default.createElement(
 			'dt',
