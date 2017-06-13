@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint src/main/resources/assets/**/*.js",
     "bundle": "webpack --bail",
-    "watch": "nodemon --exec  npm run bundle --watch js -L"
+    "watch": "nodemon --exec  npm run bundle --watch src/main/resources/assets -L"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
