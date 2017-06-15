@@ -11,6 +11,9 @@ node/
 .settings
 .springBeans
 
+### VS Code ###
+.vscode
+
 ### IntelliJ IDEA ###
 .idea
 *.iws

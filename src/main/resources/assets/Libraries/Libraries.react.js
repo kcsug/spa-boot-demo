@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react';
-import List from 'terra-list';
 
 class Libraries extends Component {
 
@@ -11,16 +10,18 @@ class Libraries extends Component {
 		if (!this.props.libraries || this.props.libraries.length === 0) {
 			return <div>Loading...</div>;
 		}
-		const libraries = this.props.libraries.map((l, index) => (
-			<List.Item
-				key={`key_${index}`}
-				content={<span onClick={() => { this.props.fetchLibrary(l.name); }}>{l.name}</span>}
-				isSelectable
-				hasChevron={false}
-			/>)
-		);
+		const libraries = this.props.libraries.map((l, i) => (
+			<button
+				key={i}
+				type='button'
+				className='list-group-item'
+				onClick={() => { this.props.fetchLibrary(l.name); }}
+			>
+				{l.name}
+			</button>
+		));
 		return (
-			<div>{libraries}</div>
+			<div className='list-group'>{libraries}</div>
 		);
 	}
 }

@@ -1,16 +1,11 @@
-# Spring Boot Terra Example
+# Spring Boot SPA Example
 
 ## First Time Running
-Run the follow commands the first starting the application:
-1. Download all npm dependencies
-
 ```
-npm install
-```
-2. Bundle all the assets
-
-```
-npm run bundle
+./mvnw spring-boot:run
 ```
 
-After the initial bundle the `npm run watch` can be used to automatically bundle the application when changes are made.
+## Watch Script
+```
+./mvnw -P watch-assets process-resources
+```

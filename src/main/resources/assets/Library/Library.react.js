@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import List from 'terra-list';
 
 const Library = (props) => {
 	if (!props.library || props.library.name === '') {
@@ -7,16 +6,14 @@ const Library = (props) => {
 	}
 	const assets = props.library.assets.map((a, index) => {
 		const files = a.files.map((f, i) => (
-			<List.Item
-				key={i}
-				content={<span>{f}</span>}
-				isSelectable={false}
-			/>
+			<li key={i} className='list-group-item'>{f}</li>
 		));
 		return (
 			<div key={index}>
 				<span>{a.version}</span>
-				{files}
+				<ul className='list-group'>
+					{files}
+				</ul>
 			</div>
 		);
 	});

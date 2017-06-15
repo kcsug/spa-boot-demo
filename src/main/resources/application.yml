@@ -1,1 +1,0 @@
-spring.devtools.restart.exclude: assets/**
